@@ -1,0 +1,61 @@
+/*Example CSS styling with media queries*/
+.show-preview {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-item {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.podcast-item {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.podcast-item {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.show-more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.show-less {
+  background-color: #dc3545;
+}
+
+.show-more {
+  background-color: #007bff;
+}
+
+/* Media queries for laptop screen */
+@media (min-width: 1024px) {
+  .show-preview {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .podcast-item {
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+  }
+} 
+ 
